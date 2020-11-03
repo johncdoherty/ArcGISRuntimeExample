@@ -1,4 +1,4 @@
-# ArcGISRuntimeClustering
+# ArcGISRuntimeExample
 
 Simple example showing how various graphics, selection, and labeling functionality can be accomplished in ArcGIS Runtime 100.x. This example reads in features from an existing feature service as a data source to populate a graphics overlay in a model, which serves as a wrapper to encapsulate related functinality. This functionality could be modified to be populated using a direct database table connection.
 
