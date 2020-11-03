@@ -1,4 +1,5 @@
-﻿using Esri.ArcGISRuntime;
+﻿using ArcGISRuntimeExample.Common;
+using Esri.ArcGISRuntime;
 using Esri.ArcGISRuntime.Data;
 using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
@@ -15,7 +16,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Color = System.Drawing.Color;
 
-namespace ArcGISRuntimeExample
+namespace ArcGISRuntimeExample.Models
 {
     public class IncidentModel
     {

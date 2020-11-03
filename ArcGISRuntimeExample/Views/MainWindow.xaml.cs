@@ -1,4 +1,5 @@
-﻿using Esri.ArcGISRuntime.UI;
+﻿using ArcGISRuntimeExample.ViewModels;
+using Esri.ArcGISRuntime.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
-namespace ArcGISRuntimeExample
+namespace ArcGISRuntimeExample.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -47,27 +48,26 @@ namespace ArcGISRuntimeExample
 
         private void MapViewMain_DrawStatusChanged(object sender, DrawStatusChangedEventArgs e)
         {
-            if (this.ActivityIndicator != null)
-            {
-                //// Update the load status information - only necessary if not on UI thread
-                //Dispatcher.Invoke(delegate ()
-                //{
-                // Show the activity indicator if the map is drawing
-                if (e.Status == DrawStatus.InProgress)
-                {
-                    this.ActivityIndicator.IsEnabled = true;
-                    this.ActivityIndicator.Visibility = System.Windows.Visibility.Visible;
-                }
-                else
-                {
-                    this.ActivityIndicator.IsEnabled = false;
-                    this.ActivityIndicator.Visibility = System.Windows.Visibility.Collapsed;
-                }
-                //});
-            }
+            //if (this.ActivityIndicator != null)
+            //{
+            //    //// Update the load status information - only necessary if not on UI thread
+            //    //Dispatcher.Invoke(delegate ()
+            //    //{
+            //    // Show the activity indicator if the map is drawing
+            //    if (e.Status == DrawStatus.InProgress)
+            //    {
+            //        this.ActivityIndicator.IsEnabled = true;
+            //        this.ActivityIndicator.Visibility = System.Windows.Visibility.Visible;
+            //    }
+            //    else
+            //    {
+            //        this.ActivityIndicator.IsEnabled = false;
+            //        this.ActivityIndicator.Visibility = System.Windows.Visibility.Collapsed;
+            //    }
+            //    //});
+            //}
         }
 
-        // Map initialization logic is contained in MapViewModel.cs
     }
 
 }

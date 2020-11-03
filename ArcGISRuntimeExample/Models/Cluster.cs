@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArcGISRuntimeExample
+namespace ArcGISRuntimeExample.Models
 {
     /// <summary>
     /// Holds information about each individual cluster
